@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer components {
+    body {
+        @apply flex flex-col;
+    }
+    nav {
+        @apply px-4 py-2 mb-4 mt-6 rounded-3xl flex items-center h-fit flex-wrap drop-shadow-md;
+    }
+    #addPrompt, #clearPrompt {
+        @apply my-2 w-10 h-10 sm:w-8 sm:h-8 shrink mx-6 sm:mx-2;
+    }
+    #formHousing {
+        @apply flex w-full sm:w-2/5 justify-center;
+    }
+    nav, main {
+        @apply mx-auto w-4/5 sm:w-1/2 lg:w-2/4;
+    }
+    footer {
+        @apply fixed bottom-1 right-3;
+    }
+    footer button {
+        @apply w-10 h-10 text-lg my-2;
+    }
+    #dataDiv{
+        @apply flex flex-col-reverse;
+    }
+    #inputPrompt {
+        @apply my-2 w-full sm:w-3/5;
+    }
+    main {
+        @apply mx-auto my-4;
+    }
+    li {
+        @apply flex rounded-3xl py-3 w-full h-fit my-3 justify-start flex-wrap drop-shadow-md;
+    }
+    li p {
+        @apply w-3/4 flex order-1 px-4 pt-1;
+    }
+    #comList li {
+        @apply bg-green-500 text-green-900;
+    }
+    input {
+        @apply border-2 border-sky-700 rounded-full pl-4 text-slate-800 text-sm h-8;
+    }
+    button {
+        font-family: 'Material Icons';
+        @apply border-2 rounded-full mx-1 flex items-center justify-center z-50 w-8 h-8;
+    }
+    .delete-btn, #clearPrompt, #purge, #purgeConfirm {
+        @apply border-red-500 hover:bg-red-500 text-red-500 hover:text-red-50;
+    }
+    .edit-btn {
+        @apply border-sky-500 hover:bg-sky-500 text-sky-500 hover:text-sky-50;
+    }
+    .comp-btn, #addPrompt, .edit-save, #purgeExit, .green-btn {
+        @apply border-green-500 hover:bg-green-500 text-green-500 hover:text-green-50;
+    }
+    .grey-btn {
+        @apply border-slate-500 hover:bg-slate-500 text-slate-500 hover:text-slate-50;
+    }
+    .create-date, .completed-date{
+        @apply text-xs w-full sm:w-1/2 order-2 flex-col self-center h-fit px-4 py-2;
+    }
+    #purgeBlinds {
+        @apply fixed w-full h-full bg-neutral-900 bg-opacity-70 z-50;
+    }
+    #purgeWindow {
+        @apply w-1/2 h-1/2 fixed top-1/4 left-1/4 bg-slate-100 z-50 flex justify-evenly flex-wrap border-4 border-red-500;
+    }
+    #purgeWarnning {
+        @apply w-full px-6 mt-12 text-center;
+    }
+    .alert {
+        @apply text-red-500 font-bold;
+    }
+    .edit-prompt {
+        @apply ml-4 w-full flex;
+    }
+    .night {
+         @apply border-indigo-500 hover:bg-indigo-500 text-indigo-500 hover:text-indigo-50;
+    }
+    .sun {
+        @apply border-amber-500 hover:bg-amber-500 text-amber-500 hover:text-amber-50;
+    }
+    .light-theme {
+        @apply text-slate-800 font-mono bg-slate-200;
+    }
+    .light-theme li, .light-theme nav {
+        @apply bg-slate-100;
+    }
+    .light-theme li p {
+        @apply font-semibold;
+    }
+    .light-theme button {
+        @apply bg-slate-100;
+    }
+    .dark-theme {
+        @apply text-white font-mono bg-slate-800;
+    }
+    .dark-theme li, .dark-theme nav {
+        @apply bg-slate-600;
+    }
+    .dark-theme li p {
+        @apply font-semibold;
+    }
+    .dark-theme button {
+        @apply bg-indigo-100;
+    }
+    .msg {
+        @apply text-slate-800;
+    }
+    .task-btns {
+        @apply flex flex-row justify-start sm:justify-center order-3 px-2 py-2 w-full sm:w-1/2;
+    }
+    .task-btns button {
+        @apply h-9 w-9 shrink;
+    }
+    .task-btns .edit-btn {
+        @apply order-1;
+    }
+    .task-btns .comp-btn {
+        @apply mx-2 order-2;
+    }
+    .task-btns .delete-btn {
+        @apply order-3;
+    }
+    #form {
+        @apply flex flex-row flex-wrap w-full justify-center;
+    }
+}

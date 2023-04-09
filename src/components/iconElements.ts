@@ -1,0 +1,10 @@
+export const submit = 'add';
+export const trash = 'delete';
+export const leave = 'exit_to_app';
+export const rewrite = 'edit_note';
+export const checked = 'done_all';
+export const burn = 'local_fire_department';
+export const refresh = 'recycling';
+export const config = 'settings';
+export const night = 'dark_mode';
+export const sun = 'brightness_5';
